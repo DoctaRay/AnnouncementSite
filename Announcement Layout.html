@@ -2,7 +2,13 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
 <style>
+
 * {box-sizing:border-box}
 body {font-family: Verdana,sans-serif;}
 .mySlides {display:none}
@@ -86,6 +92,8 @@ body {font-family: Verdana,sans-serif;}
 <h2>Automatic Slideshow</h2>
 <p>Change image every 2 seconds:</p>
 
+<!--
+
 <div class="slideshow-container">
 
 <div class="mySlides fade">
@@ -114,31 +122,34 @@ body {font-family: Verdana,sans-serif;}
   <span class="dot"></span>
   <span class="dot"></span>
 </div>
-
 </div>
-
-<img src="\assets\playgroudn.jpg" alt="This better work"/>
+-->
 
 <iframe src="https://588.commons.hwdsb.on.ca/presentation/announcements"?embed="true" width="400" height="315" frameborder="0" allowfullscreen></iframe>
 
 <!-- Twitter Feeds:
-Westdale -->
+Westdale
 <div>
 <a class="twitter-timeline" href="https://twitter.com/WestdaleSS?ref_src=twsrc%5Etfw">Tweets by WestdaleSS</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 
-<!-- Westdale Athletics -->
+<!-- Westdale Athletics
 <div>
 <a class="twitter-timeline" href="https://twitter.com/WSS_Athletics?ref_src=twsrc%5Etfw">Tweets by WSS_Athletics</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-<!-- Weather API -->
-<div id="openweathermap-widget-11"></div>
-<script src='https://openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js'></script>
-<script>
-window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push(
-  {id: 11,cityid: '5969785',appid: '4d57048d5d108bb99259913cbb455c1e',units: 'metric',containerid: 'openweathermap-widget-11',});
-(function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "https://openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";
-var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script>
+-->
+
+<!-- Weather Widget -->
+
+<a href="https://www.accuweather.com/en/ca/hamilton/l8l/current-weather/55490" class="aw-widget-legal"></a>
+<div id="awtd1510533299520" class="aw-widget-36hour"  data-locationkey="55490" data-unit="c" data-language="en-us" data-useip="false" data-uid="awtd1510533299520" data-editlocation="false"></div>
+<script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script> <!-- Why doesn't it work on an HTML file? It works fine on codepen -->
+
+<a href="https://www.accuweather.com/en/ca/hamilton/l8l/weather-forecast/55490" class="aw-widget-legal"></a>
+<div id="awcc1512002822488" class="aw-widget-current"  data-locationkey="55490" data-unit="c" data-language="en-us" data-useip="false" data-uid="awcc1512002822488"></div>
+<script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
+
+
 <script>
 var slideIndex = 0;
 showSlides();
